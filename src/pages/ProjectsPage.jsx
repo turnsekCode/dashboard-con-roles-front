@@ -7,7 +7,7 @@ function ProjectsPage() {
     const fetchProjects = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("http://192.168.1.76:4000/api/projects", {
+        const response = await fetch("https://dashboard-con-roles-back.vercel.app/api/projects", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

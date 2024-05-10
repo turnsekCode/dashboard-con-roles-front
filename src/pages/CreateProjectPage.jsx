@@ -6,7 +6,7 @@ function CreateProjectPage() {
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://192.168.1.76:4000/api/projects", {
+      const response = await fetch("https://dashboard-con-roles-back.vercel.app/api/projects", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -17,7 +17,7 @@ function RegisterPage() {
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
       setLoading(true);
-      const response = await fetch("http://192.168.1.76:4000/api/register", {
+      const response = await fetch("https://dashboard-con-roles-back.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
